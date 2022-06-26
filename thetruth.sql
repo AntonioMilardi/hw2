@@ -16,7 +16,7 @@ CREATE TABLE favorites
   titolo VARCHAR(256) NOT NULL ,
    immagine BLOB NOT NULL,
    updated_at DATE,
-   created_at DATE
+   created_at DATE,
    index idx_user(user),
    FOREIGN KEY (user) REFERENCES users(Username) 
    ) ENGINE = InnoDB;
